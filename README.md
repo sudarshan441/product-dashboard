@@ -1,12 +1,128 @@
-# React + Vite
+# 🛍️ Product Dashboard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend product dashboard built with **React**, **Redux Toolkit**, **Vite**, and tested using **Vitest** and **React Testing Library**. This app displays products from [Fake Store API](https://fakestoreapi.com) and allows users to mark favorites.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 [https://product-dashboards.netlify.app/](https://product-dashboards.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- [Vitest](https://vitest.dev/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/product-dashboard.git
+cd product-dashboard
+npm install
+```
+
+---
+
+## ▶️ Running the App Locally
+
+```bash
+npm run dev
+```
+
+This starts the app at [http://localhost:5173](http://localhost:5173).
+
+---
+
+## 🧪 Running Tests
+
+```bash
+npm run test
+```
+
+This runs all unit and integration tests using **Vitest**.
+
+---
+
+## 📊 Test Coverage Report
+
+```bash
+npm run coverage
+```
+
+This will generate a coverage report in the `/coverage` folder. Open `coverage/index.html` in a browser to view the results.
+
+> Ensure `vitest.config.js` contains:
+```js
+export default defineConfig({
+  test: {
+    coverage: {
+      reporter: ['text', 'html'],
+    },
+  },
+});
+```
+
+---
+
+## 🌐 Deployment
+
+You can deploy this app on **Netlify**:
+
+1. Push your code to GitHub.
+2. Go to [https://netlify.com](https://netlify.com) and click **"Add new site"**.
+3. Connect your GitHub repo.
+4. Set these build settings:
+
+```
+Build Command: npm run build
+Publish Directory: dist
+```
+
+5. Click **"Deploy site"**.
+6. Done! 🎉
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+│
+├── app/                # Redux store config
+├── components/         # Reusable UI components
+├── features/           # Product & favorites logic
+├── pages/              # Route-based views
+├── tests/              # Unit & integration tests
+├── App.jsx             # Root component
+├── main.jsx            # App entry point
+└── ...
+```
+
+---
+
+## 📋 Notes
+
+- API Source: [Fake Store API](https://fakestoreapi.com/)
+- Favorites are stored in Redux state, not persisted.
+- Written entirely in **JavaScript** (no TypeScript).
+
+---
+
+## 🧑‍💻 Author
+
+**Your Name**  
+[LinkedIn](https://linkedin.com/in/yourname) · [GitHub](https://github.com/your-username)
+
+---
+
+## 📄 License
+
+MIT
