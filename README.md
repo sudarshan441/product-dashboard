@@ -44,7 +44,7 @@ This starts the app at [http://localhost:5173](http://localhost:5173).
 ## 🧪 Running Tests
 
 ```bash
-npm run test
+npx vitest
 ```
 
 This runs all unit and integration tests using **Vitest**.
@@ -54,7 +54,25 @@ This runs all unit and integration tests using **Vitest**.
 ## 📊 Test Coverage Report
 
 ```bash
-npm run coverage
+npx vitest run --coverage
+```
+
+## 📊 View Coverage Report
+The report will be saved to the coverage directory.
+
+MacOS:
+```bash
+open coverage/index.html
+```
+
+Linux:
+```bash
+xdg-open coverage/index.html
+```
+
+Windows:
+```bash
+start coverage/index.html
 ```
 
 This will generate a coverage report in the `/coverage` folder. Open `coverage/index.html` in a browser to view the results.
