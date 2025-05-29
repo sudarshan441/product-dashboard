@@ -8,7 +8,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full sticky top-0 z-50 w-full text-white p-4 flex justify-between bg-blue-600">
+    <nav className="w-full sticky top-0 z-50 text-white p-4 flex justify-between bg-blue-600">
       <Link to="/" className="font-bold text-xl">
         Product Dashboard
       </Link>
