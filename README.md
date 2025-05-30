@@ -18,6 +18,7 @@ A frontend product dashboard built with **React**, **Redux Toolkit**, **Vite**, 
 - [React Router](https://reactrouter.com/)
 - [Vitest](https://vitest.dev/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Cypress](https://www.cypress.io/)
 
 ---
 
@@ -47,7 +48,11 @@ This starts the app at [http://localhost:5173](http://localhost:5173).
 npx vitest
 ```
 
-This runs all unit and integration tests using **Vitest**.
+```bash
+npm run e2e
+```
+
+This runs all unit and integration tests using **Vitest and Cypress**.
 
 ---
 
