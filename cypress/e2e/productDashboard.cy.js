@@ -13,8 +13,8 @@ describe('🧪 Product Dashboard E2E', () => {
     cy.get('[data-testid="product-card"]').should('have.length.at.least', 1).each(($el) => {
     cy.wrap($el)
       .invoke('text')
-      .should('match', /shirt/i); // case-insensitive match
-  });
+      .should('match', /shirt/i); 
+  }); 
   });
 
   it('can filter products by category', () => {
