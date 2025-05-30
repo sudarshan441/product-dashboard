@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const ProductCard = ({ product }) => {
   return (
     <Link to={`/product/${product.id}`} className="block">
-      <div className="border rounded shadow p-4 flex flex-col h-full">
-        <img
+      <div data-testid="product-card" className="border rounded shadow p-4 flex flex-col h-full">
+        <img 
           src={product.image}
           alt={product.title}
           className="h-48 w-full object-contain mb-4"

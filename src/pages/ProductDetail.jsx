@@ -38,6 +38,7 @@ const ProductDetail = () => {
       <p className="mb-4">{product.description}</p>
       <p className="text-xl font-semibold mb-4">${product.price}</p>
       <button
+        data-testid="favorite-button"
         onClick={handleAddFavorite}
         disabled={isFavorited}
         className={`px-4 py-2 rounded text-white ${isFavorited ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'}`}
